@@ -1,5 +1,82 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+:root {
+  --accent-color: #FF0070;
+
+}
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color:#000028;
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+}
+
+.header__title {
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+}
+
+.header__description {
+
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+}
+
+.title-decor {
+  background-color: #FF0070;
+  color: #000028;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.block__name {
+  color: #FF0070;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.block__paragraph {
+  color: #F1B2CE;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer__title {
+  color: #DB00FF;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+.section_img {
+  display: grid;
+  flex-shrink: 0;
+  gap:10px
+}
+
+.img-item {
+  width: 50%;
+  height: auto;
+}
+
+.block {
+  display:grid
 }
