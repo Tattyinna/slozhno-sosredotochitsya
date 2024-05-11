@@ -11,6 +11,7 @@
   --section-color: #353430;
   --paragraph_name-color: #353430;
   --paragraph-color: #353430;
+  --text-shadow-1024px: #ff0070;
 
 }
 
@@ -23,6 +24,8 @@
     --section-color: #353430;
     --paragraph_name-color: #353430;
     --paragraph-color: #353430;
+    --text-shadow-1024px: #ff0070;
+    --red-spot: transparent;
   }
 }
 
@@ -38,8 +41,12 @@
   --section-color: #353430;
   --paragraph_name-color: #353430;
   --paragraph-color: #353430;
+  --text-shadow-1024px: #ff0070;
+  --red-spot: transparent;
 }
+
+/*
 .page.theme_light .red-spot {
   display: none;
-}
+}*/
 

@@ -41,3 +41,9 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+div,
+section,
+img {
+  margin: 0;
+}

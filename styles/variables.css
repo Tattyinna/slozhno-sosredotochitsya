@@ -9,10 +9,12 @@
   --section-color: #ff0070;
   --paragraph_name-color: #000028;
   --paragraph-color: #f1b2ce;
+  --text-shadow-1024px: #ff0070;
   --font-family: "IBM Plex Mono", sans-serif;
   --font-size: 18px;
   --font-weight-bold: 700;
   --font-weight-thin: 400;
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
+  --red-spot: #ff0070;
 }

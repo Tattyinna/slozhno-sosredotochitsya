@@ -10,6 +10,7 @@
   --font-size: 18px;
   --font-weight-bold: 700;
   --font-weight-thin: 400;
+  --red-spot: #ff0070;
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -128,7 +129,7 @@
 .red-spot {
   position: absolute;
   display: flex;
-  color: var(--section-color);
+  color: var(--red-spot);
   top: 10px;
   right: 0px;
   gap: 10px;
@@ -142,10 +143,10 @@
   content: "";
   width: 10px;
   height: 10px;
-  border: 2px solid var(--section-color);
+  border: 2px solid var(--red-spot);
   border-radius: 50%;
-  box-shadow: 0px 0px 3px 2px var(--section-color);
-  background-color: var(--section-color);
+  box-shadow: 0px 0px 3px 2px var(--red-spot);
+  background-color: var(--red-spot);
   margin-top: 8px;
   margin-right: 8px;
 }
@@ -357,7 +358,7 @@
 @media (width >= 1024px) {
   .header__title,
   .footer__title {
-    text-shadow: 4px 4px 0 #ff0070;
+    text-shadow: 4px 4px 0 var(--text-shadow-1024px);
   }
 
   .header__description {

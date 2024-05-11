@@ -11,6 +11,8 @@
   --section-color: #ff0070;
   --paragraph_name-color: #000028;
   --paragraph-color: #f1b2ce;
+  --text-shadow-1024px: #ff0070;
+  --red-spot: #ff0070;
 }
 
 .page.theme_dark {
@@ -25,4 +27,6 @@
   --section-color: #ff0070;
   --paragraph_name-color: #000028;
   --paragraph-color: #f1b2ce;
+  --text-shadow-1024px: #ff0070;
+  --red-spot: #ff0070;
 }
