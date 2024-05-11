@@ -5,6 +5,7 @@
 */
 :root.theme-light {
   --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
   --title-color: #ffc2e6;
   --accent-color: #ff8dcb;
   --section-color: #353430;
@@ -16,6 +17,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
     --title-color: #ffc2e6;
     --accent-color: #ff8dcb;
     --section-color: #353430;
@@ -30,6 +32,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
   --title-color: #ffc2e6;
   --accent-color: #ff8dcb;
   --section-color: #353430;

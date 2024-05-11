@@ -5,6 +5,7 @@
 */
 :root.theme-dark {
   --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
   --title-color: #db00ff;
   --accent-color: #ff0070;
   --section-color: #ff0070;
@@ -18,6 +19,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
   --title-color: #db00ff;
   --accent-color: #ff0070;
   --section-color: #ff0070;
