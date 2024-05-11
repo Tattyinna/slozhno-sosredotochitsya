@@ -10,7 +10,6 @@
   --font-size: 18px;
   --font-weight-bold: 700;
   --font-weight-thin: 400;
-  --background-image: url(../images/cover-image-dark.png);
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
