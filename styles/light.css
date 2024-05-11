@@ -3,6 +3,27 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-light {
+  --background-image: url(../images/cover-image-light.png);
+  --title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --section-color: #353430;
+  --paragraph_name-color: #353430;
+  --paragraph-color: #353430;
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url(../images/cover-image-light.png);
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --section-color: #353430;
+    --paragraph_name-color: #353430;
+    --paragraph-color: #353430;
+  }
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -14,8 +35,8 @@
   --section-color: #353430;
   --paragraph_name-color: #353430;
   --paragraph-color: #353430;
-  .red-spot {
-    display: none;
-  }
+}
+.page.theme_light .red-spot {
+  display: none;
 }
 

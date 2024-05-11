@@ -3,6 +3,14 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-dark {
+  --background-image: url(../images/cover-image-dark.png);
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --section-color: #ff0070;
+  --paragraph_name-color: #000028;
+  --paragraph-color: #f1b2ce;
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
