@@ -42,7 +42,7 @@ a {
   line-height: inherit;
 }
 
-.page {
+* {
   margin: 0px;
   padding: 0px;
 }
