@@ -41,3 +41,7 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+main {
+  padding: 0px 10px;
+}

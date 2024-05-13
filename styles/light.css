@@ -12,6 +12,7 @@
   --paragraph_name-color: #353430;
   --paragraph-color: #353430;
   --text-shadow-1024px: #ff0070;
+  --button_hover-color: rgba(50, 49, 45, 0.4);
 
 }
 
@@ -26,6 +27,7 @@
     --paragraph-color: #353430;
     --text-shadow-1024px: #ff0070;
     --red-spot: transparent;
+    --button_hover-color: rgba(50, 49, 45, 0.4);
   }
 }
 
@@ -43,4 +45,5 @@
   --paragraph-color: #353430;
   --text-shadow-1024px: #ff0070;
   --red-spot: transparent;
+  --button_hover-color: rgba(50, 49, 45, 0.4);
 }

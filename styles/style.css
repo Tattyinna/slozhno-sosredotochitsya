@@ -1,17 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-:root {
-  --title-color: #db00ff;
-  --accent-color: #ff0070;
-  --section-color: #ff0070;
-  --paragraph_name-color: #000028;
-  --paragraph-color: #f1b2ce;
-  --font-family: "IBM Plex Mono", sans-serif;
-  --font-size: 18px;
-  --font-weight-bold: 700;
-  --font-weight-thin: 400;
-  --red-spot: #ff0070;
-}
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--background-color);
@@ -93,7 +81,8 @@
 }
 
 .header__theme-menu-button:hover {
-  border: solid var(--section-color) 1px;
+  border: solid var(--button_hover-color) 1px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -111,8 +100,7 @@
   block-size: 25px;
   border-inline-end: 1px solid var(--section-color);
   border-block-start: 1px solid var(--section-color);
-  top: 10px;
-  right: 10px;
+  inset: 10px 10px auto auto;
 }
 
 .decorated-zone::after {
@@ -122,16 +110,14 @@
   block-size: 25px;
   border-inline-start: 1px solid var(--section-color);
   border-block-end: 1px solid var(--section-color);
-  bottom: 10px;
-  left: 10px;
+  inset: auto auto 10px 10px;
 }
 
 .red-spot {
   position: absolute;
   display: flex;
   color: var(--red-spot);
-  top: 10px;
-  right: 10px;
+  inset: 10px 10px auto auto;
   gap: 10px;
   font-family: var(--font-family);
   font-size: var(--font-size);
@@ -139,6 +125,7 @@
   font-weight: var(--font-weight-thin);
   line-height: 25px;
 }
+
 .red-spot::after {
   content: "";
   width: 10px;
@@ -161,16 +148,13 @@
   font-size: var(--font-size);
 }
 
-main {
-  padding: 0px 10px;
-}
-.block_1 {
+.block_with_columns-short_margin {
   margin-top: 40px;
 }
 
-.block_2,
-.block_3,
-.block_4 {
+.block_with_many_columns,
+.block_with_columns,
+.block_with_images {
   margin-top: 50px;
 }
 
@@ -259,18 +243,15 @@ main {
     padding: 0px 20px;
   }
   .decorated-zone::before {
-    top: 20px;
-    right: 20px;
+    inset: 20px 20px auto auto;
   }
 
   .decorated-zone::after {
-    bottom: 20px;
-    left: 20px;
+    inset: auto auto 20px 20px;
   }
 
   .red-spot {
-    top: 20px;
-    right: 20px;
+    inset: 20px 20px auto auto;
   }
 
   .header__title,
@@ -288,23 +269,23 @@ main {
   main {
     padding: 0px 20px;
   }
-  .block_1,
-  .block_2,
-  .block_4 {
+  .block_with_columns-short_margin,
+  .block_with_many_columns,
+  .block_with_images {
     margin-top: 60px;
   }
 
-  .block_3 {
+  .block_with_columns {
     margin-top: 80px;
   }
 
-  .block_1,
-  .block_3 {
+  .block_with_columns-short_margin,
+  .block_with_columns {
     display: grid;
     grid-template-columns: 1.05fr 1.95fr;
   }
 
-  .column1 {
+  .block__name__column {
     padding-right: 20px;
   }
 
@@ -312,8 +293,9 @@ main {
     max-width: 236px;
   }
 
-  .section_img_list {
+  .section_img {
     display: grid;
+    margin-top: 20px;
     gap: 20px;
     grid-template-rows: repeat(3, minmax(min-content, max-content));
     grid-template-columns: repeat(3, minmax(min-content, max-content));
@@ -321,10 +303,6 @@ main {
       "a a b"
       "c d b"
       "c e e";
-  }
-
-  .section_img {
-    margin-top: 20px;
   }
 
   .img-item {
@@ -337,24 +315,24 @@ main {
     margin-bottom: 0px;
   }
 
-  .first-img {
+  .sunset_img {
     grid-area: a;
     grid-column: span 2;
   }
 
-  .second-img {
+  .ice-cream_img {
     grid-area: b;
   }
 
-  .third-img {
+  .videotape_img {
     grid-area: c;
   }
 
-  .fourth-img {
+  .books_img {
     grid-area: d;
   }
 
-  .fifth-img {
+  .street_img {
     grid-area: e;
   }
   .footer {
@@ -395,12 +373,12 @@ main {
     max-width: 315px;
   }
 
-  .block_1,
-  .block_3 {
+  .block_with_columns-short_margin,
+  .block_with_columns {
     grid-template-columns: 1.02fr 1.98fr;
   }
 
-  .block_3 {
+  .block_with_columns {
     margin-top: 60px;
   }
 }

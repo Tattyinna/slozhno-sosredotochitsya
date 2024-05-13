@@ -5,7 +5,6 @@
 :root {
   --accent-color: #ff0070;
   --title-color: #db00ff;
-  --accent-color: #ff0070;
   --section-color: #ff0070;
   --paragraph_name-color: #000028;
   --paragraph-color: #f1b2ce;
@@ -17,4 +16,5 @@
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --red-spot: #ff0070;
+  --button_hover-color: rgba(255, 0, 112, 0.4);
 }
